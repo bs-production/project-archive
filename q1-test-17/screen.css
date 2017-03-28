@@ -1,0 +1,11 @@
+#content-wrap ul.accordion {
+    padding: 0;
+    margin: 40px auto;
+}
+
+ .broadcast p {
+    text-decoration: underline;
+    font-size: 12px;
+    color: #2D7BAE;
+    margin-bottom: 0px;
+}

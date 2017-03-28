@@ -1,0 +1,707 @@
+<?php
+global $thePage, $cmsPageData;
+
+if ($thePage == 'index') {
+   $cmsPageData['page.body_content'] = '';
+}
+?>
+
+
+
+
+<?php
+
+//Update these links for your site
+$favicon = '<link rel="icon" href="http://images.quality1stbasementsystems.com/80/favicon-q1.ico">';
+
+$logo = '<a href="/"><img src="http://images.quality1stbasementsystems.com/80/Tom-Romans-Quality-1st-Logo.png" alt="[company]" title="[company]" border="0"></a>';
+
+$mainVideo= '<iframe width="560" height="315" src="https://www.youtube.com/embed/YTIDGOESHERE?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+
+$credFooter ='
+
+<div class="small-6 medium-2 medium-offset-1 columns">
+    <span><a title="Click for the Business Review of Quality 1st Basement Systems, a Waterproofing Contractors in Cliffwood NJ" href="http://www.bbb.org/new-jersey/business-reviews/waterproofing-contractors/quality-1st-basement-systems-in-perth-amboy-nj-14000644#sealclick" target="_blank"><img style="border: 0;" src="http://seal-newjersey.bbb.org/seals/blue-seal-160-82-quality1stbasementsystems-14000644.png" alt="Click for the BBB Business Review of this Waterproofing Contractor in Cliffwood NJ"></a></span>
+</div>
+<div class="small-6 medium-2 columns">
+    <span><img class="grayscale" src="http://images.quality1stbasementsystems.com/80/monmouth-cc-new.jpg" alt="Greater Monmouth Chamber of Commerce"></span>
+</div>
+<div class="small-3 medium-2 columns">
+    <span><img class="grayscale" src="http://images.quality1stbasementsystems.com/80/fra-cred-new.png" alt="National Foundation Repair Association Member"></span>
+</div><div class="small-6 medium-2 columns">
+    <span><img class="grayscale" src="http://images.quality1stbasementsystems.com/80/aberdeen-cc-new.png" alt="Township of Aberdeen"></span>
+</div><div class="small-3 medium-2 columns end">
+    <span><img class="grayscale" src="http://images.quality1stbasementsystems.com/80/staten-island-cc-new.png" alt="Staten Island Chamber of Commerce"></span>
+</div>
+                  
+';
+
+$socialFooter ='
+<a href="#" title="Like Us on Facebook">
+<img src="/core/images/templates/health/fb-icon-light.png" alt="Facebook"></a>
+<a href="#" title="Follow Us on Twitter">
+<img src="/core/images/templates/health/tw-icon-light.png" alt="Twitter"></a>
+<a href="#" title="Add us on Google+">
+<img src="/core/images/templates/health/goog-icon-light.png"></a>
+<a href="#" title="Share on LinkedIn">
+<img src="/core/images/templates/health/linkedin-icon.png" alt="LinkedIn"></a>
+<a href="#" title="Subscribe to us on YouTube">
+<img src="/core/images/templates/health/yt-icon-light.png" alt="YouTube"></a>';
+
+
+
+?>
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>[[title]]</title>
+    	<meta name="description" content="[[description]]">
+    	<meta name="keywords" content="[[keywords]]">
+    	<?php echo $favicon; ?>
+    	<link rel="alternate" title="News and Events" href="/feeds.xml" type="application/rss+xml" />
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    	<script src="https://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+    	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js" defer></script>
+    	<link rel="stylesheet" type="text/css" href="/core/jquery-ui.css" />
+    	<link rel="stylesheet" type="text/css" href="/core/v2/jquery-ui-default.css" />
+    	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+        <script src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/80/parallax.min.js"></script>
+    	<script src="/core/js/jquery.thScrollable.js" type="text/javascript" defer></script>
+    	<!-- Fonts and icons -->
+    	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    	<script src="https://use.typekit.net/fmy0fry.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    	<!-- ColorBox -->
+    	<script type="text/javascript" src="http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/colorbox/jquery.colorbox-min.js" defer></script>
+    	<link rel="stylesheet" type="text/css" href="http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/colorbox/colorbox.css" />
+    	<!--End ColorBox-->
+    	<link rel="stylesheet" type="text/css" href="http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/toolbox.css" />
+    	<link rel="stylesheet" type="text/css" href="http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/inline-widgets.css" />
+    	<link rel="stylesheet" type="text/css" href="/core/v2/sidebar-widgets.css" />
+    	<link rel="stylesheet" type="text/css" href="http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/modules.css" />
+    	<link rel="stylesheet" type="text/css" href="http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/template.css" />
+    	<link rel="stylesheet" href="/core/v3/foundation.min.css">
+    	<!--Mobile Overrides -->
+    	<link rel="stylesheet" media="screen and (max-width: 960px)" href="http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/mobile.css" />
+    	<link rel="stylesheet" href="http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/nav.css" />
+    	<link rel="stylesheet" type="text/css" href="/inc/sb-styles.css?custom_template_id=108">
+    </head>
+    
+    
+    <body>
+        <div id="template-wrap">
+            <div class="container" id="header">
+                <div class="row" data-equalizer>
+                    <div class="large-5 columns" id="logo" data-equalizer-watch>
+                         <?php echo $logo; ?>
+                    </div>
+                    <div class="large-7 columns" id="contact" data-equalizer-watch >
+                        <div class="row collapse" id="header-service-wrap">
+                            <div class="large-6 large-offset-6 columns" id="header-service-area">
+                                <p onclick="location.href='/service-area.html';" style="cursor:pointer;">Serving [territory], [major cities 3]</p>
+                            </div>
+                        </div>
+                        <div class="row collapse">
+                            <div class="columns" id="phone">
+
+                                    <?php
+                                        $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+                                        $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+                                        if($iphone || $android  == true)
+                                        {
+                                        ?>
+                                        <a href="tel:<?php echo $phonenumber; ?>" class="phone_link">
+
+                                        <?
+                                        }
+                                        else
+                                        { ?>
+                                        <a href="/free-estimate.html" class="phone_link">
+                                    <?php
+                                    }
+                                    ?>
+
+                                    <?php
+                                    $times = get_open_time();
+                                    if($times or isset($_GET['open']))
+                                    {
+                                    ?>
+
+                                    <div class="opensign"><span>open</span></div>
+
+                                    <?php
+                                    }
+                                    ?>
+
+                                    [phone]
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row collapse">
+                            <div class="columns" id="header-btn">
+                                <a class="button" href="/free-estimate.html">or <span>Contact Us Online</span></a>
+                            </div>
+                        </div>
+
+                    </div><!-- end #contact -->
+                </div>
+            </div><!-- end #header -->
+                
+<!-- SUPER NAV TOOL -->            
+            <?php
+                $superNav = new nav();
+                $superNav->superTemplateId = 3;
+                $superNav->superMode = 'top';
+                $superNav->superItems = array(
+                    'Services' => array(
+                        'target' => 'services'
+                    ),
+                    'Our Work' => array(
+                        'target' => 'about',
+                        'show_about_link' => false
+                    ),
+                    //Replace With Page ID of Financing Page
+                    45794 => array(
+                        'grandchildren' => false
+                    ),
+                    //Replace with Page ID of Reviews Page
+                    2854 => array(
+                        'grandchildren' => false
+                    ),
+                    'Service Area' => array(
+                        'target' => 'map',
+                    ),
+                    //Replace with Page ID of About Us Page
+                    2784 => array(
+                        'grandchildren' => false
+                    )
+                );
+                
+                echo $superNav->generateSuperMarkup();
+                ?>
+<!-- END SUPER NAV TOOL -->                        
+                        
+                        
+                        <?php if ($thePage == "index") { ?>
+                        
+                        <div class="container" id="main-message">
+                            <img class="mm-tom" src="http://images.quality1stbasementsystems.com/80/tom-shadow.png">
+                            <div class="hero-txt main-txt">
+                                <div class="row">
+                                    <div class="columns medium-6 medium-offset-6">
+                                            <p class="headline">Unbeatable Value.<br>Unmatched Reliability.<br>Guaranteed.</p>
+                                            <p class="subtext">We have helped thousands of New Jersey & Staten Island homeowners <br> eliminate basement and foundation issues permanently.</p>
+                                            <a class="button" href="/free-estimate.html">Schedule A Free Estimate</a>
+                                      </div>
+                                </div>
+                            </div>
+                            <div id="main-slider">
+                                <div class="main-slider-item slide1"></div>
+                                <div class="main-slider-item slide2"></div>
+                                <div class="main-slider-item slide3"></div>
+                            </div>
+
+                        </div><!-- /#main-message -->
+                        <div class="container home" id="cred">
+                            <div class="row">
+                                <?php echo $credFooter ?>
+                            </div>
+                        </div><!-- end credibility -->
+                        
+                        <div class="container home" id="choose-us">
+                                <div class="row">
+                                    <div class="columns">
+                                        <p class="home-section-title">Why [territory] homeowners choose us</p>
+                                    </div>
+                                </div>
+                                <div class="row choose-wrap">
+                                    <div class="medium-4 columns">
+                                        <div class="choose-item"><i class="fa fa-bullseye" aria-hidden="true"></i><p><span>Effective</span>Industry-leading solutions with long-lasting results.</p></div>
+                                    </div>
+                                    <div class="medium-4 columns">
+                                        <div class="choose-item"><i class="fa fa-money" aria-hidden="true"></i><p><span>Affordable</span>Cost-effective solutions to fit any household budget.</p></div>
+                                    </div>
+                                    <div class="medium-4 columns">
+                                        <div class="choose-item"><i class="fa fa-check-square-o" aria-hidden="true"></i><p><span>Reliable</span>Patented and warrantied products you can count on.</p></div>
+                                    </div>
+                                </div>
+                        </div>   <!-- end #choose-us --> 
+                        
+                        <div class="container home" id="guarantee">
+                            <div class="row">
+                                <div class="columns">
+                                    <p class="home-section-title">Customers Love Our Best Price Guarantee</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="columns medium-4 medium-push-8">
+                                    <img src="http://images.quality1stbasementsystems.com/80/best-price-badge.png">
+                                </div>
+                                <div class="columns medium-8 medium-pull-4">
+                                    <p>It's hard finding reliable solutions to complex structural or basement issues. Your budget is limited. You can't spend days researching solutions and contractors only to worry if you made the right choice.</p>
+                                    <p>You don't have to worry that &ndash; you will never pay a dollar more than you have to to get your project done. Our customers really appreciate that.</p>
+                                    <p>That's why we guarantee that our price is the lowest available for the work specified in your project. You can even continue shopping after the work is installed we will send you a check to match the price.*</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="columns">
+                                    <div class="home-coupon">
+                                        <p><span>$500 Off</span> Complete Basement Waterproofing System &amp; Installation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container home" id="services">
+                            <div class="row">
+                                <div class="columns">
+                                    <h1>NJ and Staten Island's Basement Waterproofing,<br>Crawl Space Repair &amp; Foundation Repair Contractor</h1>
+                                    <h2>Serving Toms River, Clifton, Edison &amp; Nearby</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="medium-10 medium-centered columns">
+                                    <p>As members of both the Basement Systems and the Foundation Supportworks networks, we're trained and certified to handle a wide variety of
+                                        below-grade challenges. Have a wet, flooded basement or crawl space? Bowed, cracked, or tilted foundation walls? We will meet your needs and
+                                        exceed your expectations! We service homeowners throughout New Jersey as well as Staten Island.</p>
+                                </div>
+                            </div>
+                            <div class="row" id="service-items-wrap">
+                              <div class="small-6 large-4 columns">
+                                <div class="service-item waterproofing">
+                                    <a href="/basement-waterproofing.html">
+                                    <div class="srv-icon"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/basement_waterproofing.svg"); ?></div>
+                                    <div class="srv-text"><p class="service-title">Basement Waterproofing</p>
+                                    <p class="description">Keep water out of your basement with our proven products and expert installation.</p></div>
+                                    </a>
+                                </div>
+                              </div>
+                              <div class="small-6 large-4 columns">
+                                <div class="service-item crawl">
+                                    <a href="/crawl-space-repair.html">
+                                    <div class="srv-icon"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/cs.svg"); ?></div>
+                                    <div class="srv-text"><p class="service-title">Crawl Space Repair</p>
+                                    <p class="description">Learn why more homeowners choose our patented CleanSpace system.</p></div>
+                                    </a>
+                                </div>
+                              </div>
+                              <div class="small-6 large-4 columns">
+                                <div class="service-item sump">
+                                    <a href="/basement-waterproofing/products/sump-pumps.html">
+                                    <div class="srv-icon"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/sump_pump.svg"); ?></div>
+                                    <div class="srv-text"><p class="service-title">Sump Pump Installation</p>
+                                    <p class="description">Keep water out of your basement or crawl space with our high-quality sump pumps.</p></div>
+                                    </a>
+                                </div>
+                              </div>
+
+                              <div class="small-6 large-4 columns">
+                                <div class="service-item foundation">
+                                    <a href="/foundation-repair.html">
+                                    <div class="srv-icon"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/fsi.svg"); ?></div>
+                                    <div class="srv-text"><p class="service-title">Foundation Repair</p>
+                                    <p class="description">We can solve any foundation structural problem with proven repair solutions.</p></div>
+                                    </a>
+                                </div>
+                              </div>
+                              <div class="small-6 large-4 columns">
+                                <div class="service-item concrete">
+                                    <a href="/concrete-lifting.html">
+                                    <div class="srv-icon"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/polylevel.svg"); ?></div>
+                                    <div class="srv-text"><p class="service-title">Concrete Leveling</p>
+                                    <p class="description">We lift and level cracking, sinking concrete slabs with the proven PolyLevel System.</p></div>
+                                    </a>
+                                </div>
+                              </div>
+                              <div class="small-6 large-4 columns">
+                                <div class="service-item finishing">
+                                    <a href="/basement-finishing.html">
+                                    <div class="srv-icon"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/basement_finishing.svg"); ?></div>
+                                    <div class="srv-text"><p class="service-title">Basement Finishing</p>
+                                    <p class="description">Gain extra living space in your home with a custom-designed finished basement.</p></div>
+                                    </a>
+                                </div>
+                              </div>
+                            </div>
+                            
+                                <div class="row">
+                                    <div class="columns">
+                                        <div class="feature-item">
+                                            <div class="row">
+                                                <div class="columns medium-3">
+                                                    <img src="http://images.quality1stbasementsystems.com/80/lifetime-warranty-shield.png">
+                                                </div>
+                                                <div class="columns medium-9">
+                                                    <h3>Transferable Lifetime Warranties & A Skilled Service Team</h3>
+                                                    <p>We believe in our innovative patented products and so should you. That's why we offer transferable lifetime warranties on most of our basement waterproofing products. Our products have been proven and patented, and if anything goes wrong we have a highly skilled service team ready to help at a moment's notice. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div><!-- /#services -->
+                        
+
+                        <div class="container home" id="customers">
+                            <div class="row">
+                                <div class="columns">
+                                    <p class="home-section-title">Thousands of Happy Customers near [major cities 2]</p>
+                                </div>
+                            </div>
+                                    
+                            <?php
+                                $meta = array();
+                                    $meta['useGeo'] = true;
+                                    $meta['manualAssetPage'] = false;
+                                    $meta['useFeatured'] = false;
+                                    $meta['siloMode'] = false;
+                                    $meta['qty'] = 3;
+                                    $meta['template'] = 5587;
+                                $templates = array();
+                                $templates['main'] = array('
+                                    <div class="row" id="home-reviews">
+                                            
+                                                 [[items]]
+
+                                            <p class="more-assets">
+                                                <a href="[[moreurl]]">View All Reviews</a>
+                                            </p>
+                                        </div>');
+                                  $templates['item'] = array('
+                                 <div class="columns medium-4">
+                                     <div class="review_item" class="tabs_[[num]]">
+                                        <div class="review_item_details">
+                                            <div class="small_review_stars_grouping">[[stars]]</div>
+                                            <div class="review_customer">[[author]]</div>
+                                            <div class="review_location_date">[[location]]</div>
+                                        </div>
+                                        <div class="widget_item_right">
+                                            <div class="text review_preview"><a href="[[url]]">[[text]]</a></div>
+                                        </div>
+                                    </div>
+                                </div>');
+                                $title = 'Reviews';
+                                require_once('widgets/reviews_sidebar_widget.php');
+                                echo($output);
+                            ?>
+
+                            </div><!-- end customer reviews/testimonials -->  
+                        
+                        <div class="container home" id="widgets">
+                            <div class="row">
+                                <div class="columns"><p class="home-section-title">Recent Projects in [territory]</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="columns medium-11 medium-centered">
+                                        <p>Since 1986, we've met with hundreds of homeowners throughout NJ with leaky basements or damaged foundations.
+                                        Each time, we have designed a custom solution that effectively and permanently solves the problem. Our customers
+                                        have noted the quality of our service and expertise, and hundreds of them have left us positive reviews.</p>
+                                        <p>If you are dealing with a wet basement, damp crawl space, settling foundation or sinking concrete we can help!
+                                        We serve homeowners and businesses throughout New Jersey and Staten Island. This includes Toms River, Clifton, Edison, Union City, Astoria and surrounding areas.</p>
+                                </div>
+                            </div>
+                                
+                                <?php
+                                $meta = array();
+                                $meta['useGeo'] = true;
+                                $meta['manualAssetPage'] = false;
+                                $meta['useFeatured'] = true;
+                                $meta['siloMode'] = false;
+                                $meta['qty'] = 3;
+                                $templates = array();
+                                $templates['main'] = array('
+                                
+                                    <div class="row" id="widget-slider">
+                                            [[items]]
+                                    </div>
+                                    <div class="row">
+                                        <div class="columns">
+                                            <p class="more-assets"><a href="[[moreurl]]" title="View All Before & After photos">View All Before &amp; After photos</a></p>
+                                        </div>
+                                    </div>
+                                ');
+                                $templates['item'] = array('
+                                    <div class="widget-item">
+                                        <div  class="tabs_[[num]]">   
+                                            <div class="medium-6 columns">
+                                                <div class="widget-img">
+                                                    <img src="http://img1.teambasementsystems.com/uploads/before_after/700_525/[[company_id]]/[[before-photo]]" alt="[[alt]]" />
+                                                    <span>Before</span>  
+                                                </div>
+                                            </div>
+                                            <div class="medium-6 columns">
+                                                <div class="widget-img">
+                                                    <img src="http://img1.teambasementsystems.com/uploads/before_after/700_525/[[company_id]]/[[after-photo]]" alt="[[alt]]" />
+                                                    <span>After</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="columns">
+                                                <h3>[[title]]</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    ');
+                                $title = 'BA';
+                                require_once('widgets/before_after_sidebar_widget.php');
+                                echo($output);
+                                ?>
+                        
+                        </div><!-- end #widgets.container -->
+                                        
+                        
+                                                        
+                                            <div class="container" id="home-content-wrap">
+                                                <div class="row">
+                                                    <div class="columns homepage-content" id="content-wrap">
+                                                                    
+                                                    <?php
+                                                    }
+                                                    elseif ((stristr($thePage,"free-estimate")) || ($isCityPage == true) || (stristr($thePage,"service-area"))) 
+                                                    {
+                                                    ?>
+                                                    <div class="container" id="page-wrap">
+                                                        <div class="row">
+                                                            <div class="columns full-width" id="content-wrap">
+                                                                
+                                                    <?php
+                                                    }
+                                                    else
+                                                    {
+                                                    ?>
+                                                    <?php
+                                                    if (stristr($thePage,"about-us"))
+                                                    {
+                                                    ?>
+                                                        <div id="about" class="silo-page-wrap">
+                                                        
+                                                    <?php
+                                                    }
+                                                    elseif (stristr($thePage,"basement-waterproofing"))
+                                                    {
+                                                    ?>
+                                                        <div id="waterproofing" class="silo-page-wrap">
+                                                    <?php
+                                                    }
+                                                    elseif (stristr($thePage,"basement-finishing"))
+                                                    {
+                                                    ?>
+                                                        <div id="finishing" class="silo-page-wrap">
+                                                    <?php
+                                                    }
+                                                    elseif (stristr($thePage,"crawl-space-repair"))
+                                                    {
+                                                    ?>
+                                                        <div id="crawl" class="silo-page-wrap">
+                                                    <?php
+                                                    }
+                                                    elseif (stristr($thePage,"foundation-repair"))
+                                                    {
+                                                    ?>
+                                                        <div id="foundation" class="silo-page-wrap">
+                                                    <?php
+                                                    }
+                                                    elseif (stristr($thePage,"concrete-lifting"))
+                                                    {
+                                                    ?>
+                                                        <div id="concrete" class="silo-page-wrap">
+                                                                
+                                                    <?php
+                                                    }
+                                                    elseif (stristr($thePage,"commercial-foundations"))
+                                                    {
+                                                    ?>
+                                                        <div id="commercial" class="silo-page-wrap">
+                                                    <?php
+                                                    }
+                                                    elseif (stristr($thePage,"flood-vents"))
+                                                    {
+                                                    ?>
+                                                        <div id="vents" class="silo-page-wrap">
+                                                    <?php
+                                                    }
+                                                    elseif (stristr($thePage,"home-mold"))
+                                                    {
+                                                    ?>
+                                                        <div id="mold" class="silo-page-wrap">
+                                                    <?php
+                                                    }
+                                                    elseif (stristr($thePage,"insulation"))
+                                                    {
+                                                    ?>
+                                                        <div id="insulation" class="silo-page-wrap">
+
+                                                    <?php
+                                                    }
+                                                    elseif (stristr($thePage,"realtor-program"))
+                                                    {
+                                                    ?>
+                                                        <div id="realtor" class="silo-page-wrap">                      
+                                                    <?php
+                                                    }
+                                                    elseif (stristr($thePage,"service-area"))
+                                                    {
+                                                    ?>
+                                                        <div id="territory" class="silo-page-wrap">
+                                                                                
+                                                    <?php
+                                                    }
+                                                    else
+                                                    {
+                                                    ?>
+                                                        <div id="about" class="silo-page-wrap">
+                                                                                    
+                                                    <?php
+                                                    }
+                                                    ?>
+                                                    <div class="container" id="silo-header">
+                                                        <div class="row">
+                                                            <div class="columns">
+                                                                <span class="page-title"><?php echo $cmsPageData['page.name']; ?></span>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end #silo-header -->
+                                                    <div class="container" id="page-wrap">
+                                                        <div class="row">
+                                                            <div class="medium-9 medium-push-3 columns body" id="content-wrap">
+                                                                <?php
+                                                                }
+                                                                ?>
+                                                                [[content]]    
+                                                            </div>
+                                                            
+                                             <?php if (($thePage != "index") && ($thePage != "service-area") && ($isCityPage == 0) && ($thePage != "free-estimate") && ($thePage != "free-estimate/confirmation"))
+                                              { 
+                                               ?>
+                                                                <div class="medium-3 medium-pull-9 columns" id="subnav-left">
+                                                                     [[single_silo_nav]]
+                                                                </div>
+                                            <?php
+                                              }
+                                             ?>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <?php if (($thePage != "index") && ($thePage != "service-area") && ($isCityPage == 0) && ($thePage != "free-estimate") && ($thePage != "free-estimate/confirmation"))
+                                                    { ?>
+                                                        </div><!-- close #silo-page-wrap -->
+                                                    <?php
+                                                            }
+                                                            ?>
+
+                                                    <?php if (($thePage != "service-area") && ($isCityPage == 0) && ($thePage != "free-estimate")) { ?>
+                                                
+                                                    <div class="container home" id="service-area">
+                                                        <div class="container home" id="home-city-list-wrap">
+                                                            <div class="row small-collapse large-uncollapse">
+                                                                <div class="large-3 columns">
+                                                                    <div id="home-city-list">
+                                                                        <p class="home-section-title">our service area</p>
+                                                                        [[city_scroll:100]]
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container home" id="service-map">
+                                                                <div id="gmap-wrap">[[service_area_google_map]]</div>
+                                                        </div>
+                                                    </div><!-- end #service-area -->
+                                                    
+                                                    <?php
+                                                    }
+                                                    ?>
+
+                                                            
+                                                            <div class="container home" id="footer">
+                                                                <div class="row" data-equalizer>
+                                                                    <div class="large-7 large-push-5 columns" data-equalizer-watch>
+                                                                
+                                                                <!-- SUPER FOOTER TOOL -->
+                                                                    <div id="footer-links">
+                                                                        <?php
+                                                                        $superNav = new nav();
+                                                                        $superNav->superMode = 'bottom';
+                                                                        echo $superNav->generateSuperMarkup();
+                                                                        ?>
+                                                                        
+                                                                        [[social_footer]]
+                                                                    </div>
+                                                                <!-- END SUPER FOOTER TOOL -->
+                                                                
+                                                                    </div>
+                                                                    <div class="large-5 large-pull-7 columns" data-equalizer-watch>
+                                                                        <div id="footer-contact">
+                                                                            <a href="/free-estimate.html" id="footer-btn">get a free quote</a>
+                                                                            <p class="footer-phone">Or call us at
+                                                                                <span><a href="tel:<?php echo $phonenumber; ?>" class="phone_link">[phone]</a></span>
+                                                                            </p>
+                                                                            <p class="footer-address">
+                                                                                &copy; <?php echo(date('Y')); ?> [[display_addresses]]</p>
+                                                                            <p class="footer-disclaimer">*Ask your design specialist about the details of our price assurance guarantee.</p>
+
+                                                                        </div>
+                                                                    </div>
+                                                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                            
+                                                            <a id="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i>Top</a>
+                                                        </div>
+                                                        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script> 
+<script src="http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/template.js"></script> 
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script> 
+
+<script>
+ $('#main-slider').slick({
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            dots: false,
+                            arrows: false,
+                            infinite: true,
+                            speed: 1000,
+                            fade: true,
+                            cssEase: 'ease',
+                            responsive: [
+                                {
+                                  breakpoint: 640,
+                                  settings: {
+                                    arrows: false
+                                  }
+                                }
+                            ]
+                        });
+
+ $('#widget-slider').slick({
+                            autoplay: false,
+                            dots: true,
+                            infinite: true,
+                            speed: 500,
+                            fade: true,
+                            cssEase: 'ease',
+                            responsive: [
+                                {
+                                  breakpoint: 640,
+                                  settings: {
+                                    arrows: false
+                                  }
+                                }
+                            ]
+                        });
+                        
+//Map Scroll Zoom Preventer
+        $('#home-city-list-wrap').click(function(){
+           $(this).css('pointer-events','none');
+           $('#home-city-list').css('pointer-events','visible');
+        });
+</script>                                                  
+                                                        
+                                                        
+                                                    </body>
+                                                </html>
