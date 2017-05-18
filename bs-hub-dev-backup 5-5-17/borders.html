@@ -1,0 +1,1191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>[[title]]</title>
+    	<meta name="description" content="[[description]]">
+    	<meta name="keywords" content="[[keywords]]">
+    	<link rel="icon" href="/core/images/universal/favicon/bs-favicon.ico">
+          [[custom_core_v3]]
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/aos.css" />
+</head>
+
+    <body>
+        <div id="template-wrap">
+            
+<div class="container" id="header">
+    <div class="container" id="nav-bar">
+        <div class="row collapse">
+            <div class="columns top-nav contain-to-grid sticky">
+                <div class="container" id="top-header">
+                    <div class="row small-collapse medium-uncollapse">
+                        <div class="columns">
+                    <ul>
+                		<li class="call">                                    
+                		    <?php
+                                    $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+                                    $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+                                    if($iphone || $android  == true)
+                                    {
+                                    ?>
+                                    <a href="tel:<?php echo $phonenumber; ?>" class="phone_link">
+            
+                                    <?
+                                    }
+                                    else
+                                    { ?>
+            
+                                    <a href="/free-estimate.html" class="phone_link">
+                                <?php
+                                }
+                                ?>
+            
+                                <i class="fa fa-phone"></i>1-888-888-8888
+                            </a>
+                        </li>
+            		    <li class="find hide-for-small"><a href="/basement-waterproofing/contractors.html"><i class="fa fa-map-marker"></i>Find a local contractor</a></li>
+            	    </ul>
+            	    </div>
+                    </div>
+                </div>					
+                <nav class="top-bar" data-topbar role="navigation">
+    				<ul class="title-area">
+    					<li class="name show-for-large-up">
+                            <a href="/"><?php echo file_get_contents("http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/215/bs-logo-1987.svg"); ?></a>
+    					</li>
+    					<li class="name hide-for-large-up">
+    					    <a href="/"><?php echo file_get_contents("http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/215/bs-icon.svg"); ?></a>
+    					</li>
+    					<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    					<li class="toggle-topbar menu-icon">
+    						<a href="#">
+    							<span>Menu</span>
+    						</a>
+    					</li>
+    				</ul>
+    				<section class="top-bar-section">
+    					<!-- Right Nav Section -->
+    					<ul>
+    						<li class="has-dropdown"><a href="/basement-waterproofing.html"><span>Basement</span></a>
+    							<ul class="dropdown">
+    								<li><a href="/basement-waterproofing.html">Basement Waterproofing</a></li>
+    								<li><a href="/sump-pump.html">Sump Pump Systems</a></li>
+    								<li><a href="/basement-dehumidifier.html">Dehumidification</a></li>
+    								<li><a href="/mold.html">Mold & Odor Control</a></li>
+    								<li><a href="/basement-finishing.html">Basement Finishing</a></li>
+    							</ul>
+    						</li>
+    						<li class="has-dropdown"><a href="/crawl-space.html"><span>Crawl Space</span></a>
+    							<ul class="dropdown">
+    								<li><a href="/crawl-space.html">Crawl Space Repair</a></li>
+    								<li><a href="/crawl-space/crawl-space-products.html">Crawl Space Products</a></li>
+    								<li><a href="/crawl-space/crawl-space-vapor-barrier.html">Crawl Space Vapor Barrier</a></li>
+    								<li><a href="/crawl-space/crawl-space-insulation.html">Crawl Space Insulation</a></li>
+    							</ul>
+    						</li>
+    						<li class="has-dropdown"><a href="/foundation-repair.html"><span>Foundation</span></a>
+    							<ul class="dropdown">
+    								<li><a href="/foundation-repair.html">Foundation Repair</a></li>
+    								<li><a href="/foundation-repair/bowing-walls.html">Bowing Walls</a></li>
+    								<li><a href="/foundation-repair/foundation-wall-cracks.html">Foundation Wall Cracks</a></li>
+    								<li><a href="/foundation-repair/foundation-issues.html">Foundation Issues</a>
+    							</ul>
+    						</li>
+    						<li class="has-dropdown"><a href="/learning-centers.html"><span>Learn</span></a>
+            					<ul class="dropdown">
+            						<li><a href="/learning-centers.html">Learning Center</a></li>
+            						<li><a href="/company/videos.html">Videos</a></li>
+            						<li><a href="/company/news-and-events.html">Blog</a></li>
+            					</ul>
+            				</li>
+    			            <li><a href="/company.html"><span>About Us</span></a></li>
+    			            <li id="free-quote-nav"><a href="/free-estimate.html"><span>Free Quote</span></a></li>
+                        </ul>
+                    </section>
+                </nav><!-- END Nav -->
+            </div><!-- END sticky -->
+        </div>
+    </div>
+</div><!-- END Header -->
+
+<?php if ($thePage == "index") { ?>
+<div class="container hide-for-small" id="main-message">
+ 
+    <div class="main-slide slide1">
+        <div class="row">
+    		<div class="medium-7 columns main-text medium-offset-5">
+        		<div class="top-text">
+        			<span class="mm-h2">Responsible Waterproofing</span>
+        			<span class="mm-h3">is our promise and our #1 priority</span>
+        			<p>Keep your home dry and healthy with our proven products and solutions and professional service.</p>
+    			</div>
+    			<div class="bottom-text">
+    				<p>Enter your zip code to find a local contractor</p>
+                    <div class="mm-form-wrap">
+                        <form method="post" action="/free-estimate.html">
+                            <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                            <input type="submit" class="submit" value="Get Started">
+                        </form>
+                    </div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="main-slide slide2">
+        <div class="row">
+    		<div class="large-7 columns main-text large-offset-5">
+        		<div class="top-text">
+        			<span class="mm-h2">Customer Service that "Wows"</span>
+        			<span class="mm-h3 hide-for-small">lorem ipsum dolor sit amet.</span>
+        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed justo eu odio luctus.</p>
+    			</div>
+    			<div class="bottom-text">
+    				<p>Enter your zip code to find a local contractor</p>
+                    <div class="mm-form-wrap">
+                        <form method="post" action="/free-estimate.html">
+                            <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                            <input type="submit" class="submit" value="Get Started">
+                        </form>
+                    </div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	<div class="main-slide slide3">
+        <div class="row">
+    		<div class="large-7 columns main-text large-offset-5">
+        		<div class="top-text">
+        			<span class="mm-h2">The must-have system for your home</span>
+        			<span class="mm-h3 hide-for-small">will keep your space dry, permanently</span>
+        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed justo eu odio luctus.</p>
+    			</div>
+    			<div class="bottom-text">
+    				<p>Enter your zip code to find a local contractor</p>
+                    <div class="mm-form-wrap">
+                        <form method="post" action="/free-estimate.html">
+                            <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                            <input type="submit" class="submit" value="Get Started">
+                        </form>
+                    </div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	<div class="main-slide slide4">
+        <div class="row">
+    		<div class="large-7 columns main-text large-offset-5">
+        		<div class="top-text">
+        			<span class="mm-h2">We're leading the industry</span>
+        			<span class="mm-h3 hide-for-small">through our nationwide contractor network</span>
+        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed justo eu odio luctus.</p>
+    			</div>
+    			<div class="bottom-text">
+    				<p>Enter your zip code to find a local contractor</p>
+                    <div class="mm-form-wrap">
+                        <form method="post" action="/free-estimate.html">
+                            <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                            <input type="submit" class="submit" value="Get Started">
+                        </form>
+                    </div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</div><!-- end main message -->
+<!-- main message for mobile -->
+<div class="container show-for-small" id="main-message-sm">
+    <div class="row collapse">
+        <div class="columns main-text">
+            <div class="top-text">
+                <span class="mm-h2">Responsible Waterproofing</span>
+                <span class="mm-h3">Professional &bull; Reliable &bull; Guaranteed</span>
+            </div>
+            <div class="bottom-text">
+                <p>Find your local contractor</p>
+                <div class="mm-form-wrap">
+                    <form method="post" action="/free-estimate.html">
+                        <input type="text" name="Zip" size="16" placeholder="Zip Code" tabindex="-1">
+                        <input type="submit" class="submit" value="Get Started" tabindex="-1">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end main message mobile -->
+
+<div class="container" id="services">
+    <div class="row">
+    <div class="medium-10 medium-centered large-8 large-uncentered columns aos-item" data-aos="fade-up">
+    <h1>YOUR #1 SOURCE FOR ALL THINGS BASEMENTY</h1>
+    <h4>Wet, cold, musty or cracked - we have solutions for all your basement, crawl space or foundation troubles!</h4>
+<p>Whatever is happening under your home, Basement Systems can help. For over 30 years, we've been fixing wet basements, damp crawl spaces and cracked foundations and helping to control and prevent moisture damage, mold and structural issues. Our innovative products and installation and service by trained experts have helped nearly a half-million homeowners to make their homes dry and healthy.</p>			
+<p>Let us help you today. <a href="/free-estimate.html">Schedule a free consultation</a> to have a local specialist diagnose your home's symptoms and recommend the best solutions for your needs.</p>
+</div>
+  <div class="large-4 columns aos-item" data-aos="fade-up">
+		<div class="service-item aos-item" data-aos="fade-up"><a href="/basement-waterproofing.html"><i class="fa fa-tint" aria-hidden="true"></i>My basement is wet</a></div>
+		<div class="service-item aos-item" data-aos="fade-up"><a href="/basement-waterproofing/basement-insulation.html"><i class="fa fa-snowflake-o" aria-hidden="true"></i>My basement is cold</a></div>
+		<div class="service-item aos-item" data-aos="fade-up"><a href="/mold.html"><i class="fa fa-trash" aria-hidden="true"></i>My basement has an odor</a></div>
+		<div class="service-item aos-item" data-aos="fade-up"><a href="/crawl-space.html"><i class="fa fa-flask" aria-hidden="true"></i>My crawl space is musty</a></div>
+		<div class="service-item aos-item" data-aos="fade-up"><a href="/foundation-repair/foundation-wall-cracks.html"><i class="fa fa-home" aria-hidden="true"></i>My foundation is cracked</a></div>
+	</div>
+</div>
+                        </div><!-- /#services -->
+
+<div class="container home" id="facts-figures">
+<div class="row aos-all">
+	<div class="small-4 medium-2 columns aos-item medium-offset-1" data-aos="zoom-out-up">
+		<div class="aos-item__inner">
+			<span class="count">73</span>
+			<p>Innovation & Ethics Awards</p>
+		</div>
+	</div>
+	<div class="small-4 medium-2 columns aos-item" data-aos="fade-right">
+		<div class="aos-item__inner">
+			<span class="count">31</span>
+			<p>Patented Products</p>
+		</div>
+	</div>
+	<div class="small-4 medium-2 columns aos-item" data-aos="fade-right">
+		<div class="aos-item__inner">
+			<span class="count">117</span>
+			<p>Contractors in Network</p>
+		</div>
+	</div>
+	<div class="small-6 medium-2 columns aos-item" data-aos="fade-right">
+		<div class="aos-item__inner">
+			<span class="count">20</span><span>k+</span>
+			<p>Customer Reviews</p>
+		</div>
+	</div>
+	<div class="small-6 medium-2 columns aos-item medium-pull-1" data-aos="flip-up">
+		<div class="aos-item__inner">
+			<span>A+</span>
+			<p>Better Business Bureau Rating</p>
+		</div>
+	</div>
+</div>
+</div>   <!-- end #facts-figures -->
+
+<div class="container" id="superior-products">
+	<div class="row aos-item" data-aos="fade-up">
+		<div class="medium-5 columns sedona">
+		    <img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/home-big-3.jpg" class="sedonaimg" alt="Superior Products Sedona Sanidry"/>		
+		</div>
+		<div class="medium-7 columns">
+			<h1>Superior Products with a Lifetime Warranty</h1>
+			<h4>Meet the Superstars of the Waterproofing Industry</h4>
+                <p>Combining our commitment to research with years of "below-grade" experience has enabled Basement Systems to develop an extensive selection of industry-leading products that effectively solve common basement and crawl space problems such as flooding, moisture damage, mold and poor energy performance.</p>
+                <p>Basement Systems Inc. has been awarded more than 30 patents and 19 innovation prizes on waterproofing products we use every day, such as our drainage pipes, sump pumps and dehumidifiers - the main products in our waterproofing system.</p>					
+                <div class="sp-buttons">
+					<a class="button" href="/sump-pump/triplesafe.html">TripleSafe<span>Sump Pump</span><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					<a class="button" href="/basement-waterproofing/basement-waterproofing-products/drainage-systems/waterguard.html">WaterGuard<span>Drainage System</span><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					<a class="button" href="/basement-dehumidifier/sanidry-sedona-dehumidifier.html">SaniDry Sedona<span>Dehumidifier</span><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+				</div>
+		</div>
+	</div>
+	<div class="row aos-item" data-aos="fade-up">
+		<div class="columns">
+		    <div class="row" id="home-product-slider">
+		    <h3>PRODUCTS WE INSTALL EXCLUSIVELY*</h3>
+	<div class="columns">
+		<div class="product-item">
+		    <a href="/crawl-space/crawl-space-products/cleanspace.html" title="CleanSpaceÂ® Crawl Space Vapor Barrier"><p>CleanSpace</p><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/cleanspace-thm.jpg" alt="Crawl Space Vapor Barrier"/></a></div>
+		<div class="product-item">
+			<a href="/basement-waterproofing/basement-waterproofing-products/basement-windows/replacement-windows.html" title="EverLastâ„¢ Replacement Basement Windows"><p>EverLast Windows</p><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/everlast-thm.jpg" alt="Replacement Basement Windows"/></a></div>
+		<div class="product-item">
+			<a href="/basement-waterproofing/basement-waterproofing-products/drainage-systems/trench-drain.html" title="TrenchDrainâ„¢ Basement Entry Surface Drainage"><p>TrenchDrain</p><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/trenchdrain-thm.jpg" alt="Basement Entry Surface Drainage"/></a></div>
+		<div class="product-item">
+			<a href="/basement-dehumidifier/sanidry-xp-dehumidifier.html" title="SaniDryâ„¢ XP Basement Dehumidifier"><p>Sanidry XP</p><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/sanidryxp-thm.png" alt="Basement Dehumidifier"/></a></div>
+		<div class="product-item">
+			<a href="/basement-waterproofing/basement-waterproofing-products/iceguard-discharge-line-system.html" title="IceGuardâ„¢ Anti-Freeze System for Sump Pump Discharge Lines"><p>IceGuard</p><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/IceGuard-thm.jpg" alt="Anti-Freeze System for Sump Pump Discharge Lines"/></a></div>
+		<div class="product-item">
+			<a href="/sump-pump/ultrasump.html" title="UltraSumpÂ® Battery Backup Sump Pump System"><p>UltraSump</p><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/ultrasump-thm2.png" alt="Battery Backup Sump Pump System"/></a></div>
+	    <div class="product-item">
+			<a href="/basement-waterproofing/basement-waterproofing-products/drainage-systems/drytrak.html" title="DryTrakÂ® Interior Basement Drainage System for Monolithic Foundations"><p>DryTrak</p><img src="http://images.basementsystems.com/215/drytrak-product-thumb.png" alt="Interior Basement Drainage System for Monolithic Foundations"/></a></div>
+		<div class="product-item">
+			<a href="/basement-waterproofing/basement-waterproofing-products/basement-windows/egress-window-well.html" title="RockWellÂ® Basement Egress Window Wells"><p>RockWell</p><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/rockwell-thm.png" alt="Basement Egress Window Wells"/></a></div>
+		<div class="product-item">
+			<a href="/basement-waterproofing/basement-waterproofing-products/basement-windows/window-well.html" title="SunHouseâ„¢ Basement Window Well Enclosure"><p>Sunhouse</p><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/sunhouse-thm.png" alt="Basement Window Well Enclosure"/></a></div>
+		<div class="product-item">
+			<a href="/basement-waterproofing/basement-waterproofing-products/floodring-water-tank-protection.html" title="FloodRingÂ® Water Tank Flood Protection"><p>FloodRing</p><img src="http://images.basementsystems.com/215/flood-ring-thumb.png" alt="Water Tank Flood Protection"/></a></div>
+	</div>
+			<p class="disclaimer clear">*All products are available for installation exclusively through the Basement Systems Contractor Network. The products listed are not available for purchase.</br>
+Contact your local contractor to schedule a free, no-obligation estimate.</p>
+</div>
+		    </div>
+	</div>
+</div> <!-- end #superior-products -->             
+<div class="container aos-item" data-aos="fade-up" id="cutting-edge">
+    <div class="row aos-item" data-aos="fade-up">
+		<div class="medium-10 medium-centered large-6 large-uncentered columns">
+            <h1>Innovative Solutions for Your Home</h1>
+			<h4>Introducing the SaniDry Sedona - The world's most efficient dehumidifier</h4>
+		</div>
+	</div>
+	<div class="row aos-item" data-aos="fade-up">
+		<div class="medium-10 medium-centered large-5 large-push-7 large-uncentered columns">
+			<div class="cutting-edge-image">
+			    <img class="energystar" src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/energystar-logo.jpg">
+			    <img class="cutting-edge-img" src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/sedona-img-1.png" width="428" height="328" alt="The cutting edge Sedona SanyDry"/>
+			</div>
+		</div>
+		<div class="medium-10 medium-centered large-6 large-pull-5 large-uncentered columns">
+			<p>The SaniDry Sedona dehumidifier and air filtration system is the latest addition to Basement Systems' lineup of innovative products. The Sedona is the world's most powerful, efficient dehumidifier of its size*, removing more water from the air than other units, using the same energy. Now you can keep the air inside your home comfortable and healthy, while saving on energy costs.</p>
+            <div class="data-chart">
+            <table class="chart">
+              <tbody>
+                <tr>
+                  <td colspan="2">
+                    <p class="chart-text">SaniDry Sedona vs. the Competition
+                    <span>Water removal by SaniDry Sedona vs. standard household dehumidifier for same electricity cost.</span></p>
+                  </td>
+                </tr>       
+                <tr>
+                  <td>
+                    <p class="percentage">SaniDry Sedona</p>
+                  </td>
+                  <td class="chart">
+            
+                    <div class="barchart">
+                      <span class="meter" style="width: 85%"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="percentage">Standard Household Dehumidifier</p>
+                  </td>
+                  <td class="chart">
+            
+                    <div class="barchart">
+                      <span class="meter" style="width: 45%"></span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            <p class="disclaimer clear">*The SaniDry Sedona dehumidifier has a 100-pint capacity and is the most efficient dehumidifier without a heat exchange core.</p>
+		</div>
+	</div>
+</div>     <!-- end #cutting-edge -->     
+              
+                        <div class="container" id="homepage-content">
+
+            <?php
+            }
+            elseif ((stristr($thePage,"free-estimate")) || ($isCityPage == true) || (stristr($thePage,"service-area")))
+            {
+            ?>
+                <div class="container" id="page-wrap">
+                  <div class="row">
+                      <div class="columns full-width" id="content-wrap">
+            <?php
+            }
+            else
+            {
+            ?>
+            <?php
+            if (stristr($thePage,"about-us"))
+            {
+            ?>
+            <div class="silo-page-wrap" id="about">
+                <div class="mm-swap-wrap">
+                    <div class="row small-collapse medium-uncollapse">
+                        <div class="columns medium-10 medium-centered">
+                            <div class="mm-content-wrap">
+                                <div class="mm-text-wrap">
+                                    <span class="head">We Are Your Local Expert For</span>
+                                    <span class="subhead"><img src="http://blessed.dev.basementsite.com/core/images/templates/health/atb-white-stroke.png"></span>
+                                </div>
+                                <div class="mm-form-wrap hide-for-small">
+                                    <p>Basement, Crawl Space, or Foundation Problems?<br><span>Contact us for a free, no-obligation estimate</span></p>
+                                    <form method="post" action="/free-estimate.html">
+                                        <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                                        <input type="submit" class="submit" value="FIND NOW">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end silo message -->
+            <?php
+            }
+            elseif (stristr($thePage,"basement-waterproofing"))
+            {
+            ?>
+                            <div class="silo-page-wrap" id="waterproofing">
+                <div class="mm-swap-wrap">
+                    <div class="row small-collapse medium-uncollapse">
+                        <div class="columns medium-10 medium-centered">
+                             <div class="mm-content-wrap">
+                                <div class="mm-text-wrap">
+                                    <span class="head">Got a wet basement? Musty odors?</span>
+                                    <span class="subhead">Protect your home with our proven solutions & lifetime warranty.</span>
+                                    <!--<span class="head">Complete Basement Waterproofing System</span>
+                                    <span class="subhead">Our patented products are backed by a transferable lifetime warranty.</span>-->
+                                </div>
+                                <div class="mm-form-wrap hide-for-small">
+                                    <p>A dry, healthy home starts here.<br><span>Or call us at 1-800-638-7048</span></p>
+                                    <form method="post" action="/free-estimate.html">
+                                        <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                                        <input type="submit" class="submit" value="FIND NOW">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end silo message -->
+            <?php
+            }
+            elseif (stristr($thePage,"crawl-space"))
+            {
+            ?>
+                            <div class="silo-page-wrap" id="waterproofing">
+                <div class="mm-swap-wrap">
+                    <div class="row small-collapse medium-uncollapse">
+                        <div class="columns medium-10 medium-centered">
+                             <div class="mm-content-wrap">
+                                <div class="mm-text-wrap">
+                                    <span class="head">Dealing with cold floors or frozen pipes?</span>
+                                    <span class="subhead">CleanSpace crawl space encapsulation is the solution you need.</span>
+                                    <!--<span class="head">Complete Basement Waterproofing System</span>
+                                    <span class="subhead">Our patented products are backed by a transferable lifetime warranty.</span>-->
+                                </div>
+                                <div class="mm-form-wrap hide-for-small">
+                                    <p>Fix the problems in your crawl space!<br><span>Or call us at 1-800-638-7048</span></p>
+                                    <form method="post" action="/free-estimate.html">
+                                        <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                                        <input type="submit" class="submit" value="FIND NOW">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end silo message -->
+            <?php
+            }
+            elseif (stristr($thePage,"sump-pump"))
+            {
+            ?>
+                <div class="silo-page-wrap" id="mold">
+                <div class="mm-swap-wrap">
+                    <div class="row small-collapse medium-uncollapse">
+                        <div class="columns medium-10 medium-centered">
+                            <div class="mm-content-wrap">
+                                <div class="mm-text-wrap">
+                                    <span class="head">Protect Your Home Against Mold &amp; Mildew</span>
+                                    <span class="subhead">Effectively reduce indoor humidity and moisture with our patented products.</span>
+                                </div>
+                                <div class="mm-form-wrap hide-for-small">
+                                    <p>Find your local contractor for a free estimate<br><span>Or call us at 1-800-638-7048</span></p>
+                                    <form method="post" action="/free-estimate.html">
+                                        <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                                        <input type="submit" class="submit" value="FIND NOW">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end silo message -->
+            <?php
+            }
+            elseif (stristr($thePage,"basement-finishing"))
+            {
+            ?>
+                <div class="silo-page-wrap" id="finishing">
+                <div class="mm-swap-wrap">
+                    <div class="row small-collapse medium-uncollapse">
+                        <div class="columns medium-10 medium-centered">
+                            <div class="mm-content-wrap">
+                                <div class="mm-text-wrap">
+                                    <span class="head">Total Basement Finishing<span>&trade;</span> Remodeling System</span>
+                                    <span class="subhead">Our award-winning finishing products are waterproof and mold-resistant.</span>
+                                </div>
+                                <div class="mm-form-wrap hide-for-small">
+                                    <p>Thinking about a finished basement?<br><span>Contact us for a free, no-obligation estimate</span></p>
+                                    <form method="post" action="/free-estimate.html">
+                                        <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                                        <input type="submit" class="submit" value="FIND NOW">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end silo message -->
+            <?php
+            }
+            elseif (stristr($thePage,"foundation-repair"))
+            {
+            ?>
+                <div class="silo-page-wrap" id="foundation">
+                <div class="mm-swap-wrap">
+                    <div class="row small-collapse medium-uncollapse">
+                        <div class="columns medium-10 medium-centered">
+                             <div class="mm-content-wrap">
+                                <div class="mm-text-wrap">
+                                    <span class="head">Foundation problems only get worse!</span>
+                                    <span class="subhead">Protect your home with our Patented Products and 25-Year Warranty.</span>
+                                </div>
+                                <div class="mm-form-wrap hide-for-small">
+                                    <p>Find out if your foundation problem requires repair.<br><span>Enter your zip code to request your FREE estimate today.</span></p>
+                                    <form method="post" action="/free-estimate.html">
+                                        <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                                        <input type="submit" class="submit" value="FIND NOW">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end silo message -->
+            <?php
+            }
+            elseif (stristr($thePage,"mold"))
+            {
+            ?>
+                <div class="silo-page-wrap" id="mold">
+                <div class="mm-swap-wrap">
+                    <div class="row small-collapse medium-uncollapse">
+                        <div class="columns medium-10 medium-centered">
+                            <div class="mm-content-wrap">
+                                <div class="mm-text-wrap">
+                                    <span class="head">Protect Your Home Against Mold &amp; Mildew</span>
+                                    <span class="subhead">Effectively reduce indoor humidity and moisture with our patented products.</span>
+                                </div>
+                                <div class="mm-form-wrap hide-for-small">
+                                    <p>Find your local contractor for a free estimate<br><span>Or call us at 1-800-638-7048</span></p>
+                                    <form method="post" action="/free-estimate.html">
+                                        <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                                        <input type="submit" class="submit" value="FIND NOW">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end silo message -->
+            <?php
+            }
+            elseif (stristr($thePage,"basement-dehumidifier"))
+            {
+            ?>
+                <div class="silo-page-wrap" id="mold">
+                <div class="mm-swap-wrap">
+                    <div class="row small-collapse medium-uncollapse">
+                        <div class="columns medium-10 medium-centered">
+                            <div class="mm-content-wrap">
+                                <div class="mm-text-wrap">
+                                    <span class="head">Protect Your Home Against Mold &amp; Mildew</span>
+                                    <span class="subhead">Effectively reduce indoor humidity and moisture with our patented products.</span>
+                                </div>
+                                <div class="mm-form-wrap hide-for-small">
+                                    <p>Find your local contractor for a free estimate<br><span>Or call us at 1-800-638-7048</span></p>
+                                    <form method="post" action="/free-estimate.html">
+                                        <input type="text" name="Zip" size="16" placeholder="Zip Code">
+                                        <input type="submit" class="submit" value="FIND NOW">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end silo message -->
+            <?php
+            }
+            else
+            {
+            ?>
+                <div id="about" class="silo-page-wrap">
+            <?php
+            }
+            ?>
+                  <!-- <div class="container" id="silo-header">
+                      <div class="row">
+                          <div class="columns">
+                              <span class="page-title"><?php echo $cmsPageData['page.name']; ?></span>
+                          </div>
+                      </div>
+                  </div>end #silo-header -->
+                  <div class="container" id="page-wrap">
+                      <div class="row">
+                          <div class="medium-9 medium-push-3 columns body" id="content-wrap">
+            <?php
+            }
+            ?>
+                            [[content]]
+                          </div>
+            <?php if (($thePage != "index") && ($thePage != "service-area") && ($isCityPage == 0) && ($thePage != "free-estimate") && ($thePage != "free-estimate/confirmation"))
+           { ?>
+                <div class="medium-3 medium-pull-9 columns" id="subnav-left">
+                    [[single_silo_nav]]
+                </div>
+            <?php
+            }
+            ?>
+                  
+            <?php if ($thePage != "index") { ?>
+                        </div>
+                    </div>
+            <?php
+            }
+            ?>
+
+            <?php if (($thePage != "index") && ($thePage != "service-area") && ($isCityPage == 0) && ($thePage != "free-estimate") && ($thePage != "free-estimate/confirmation"))
+            { ?>
+                </div><!-- end #silo-page-wrap -->
+            <?php
+            }
+            ?>
+              <?php if (($thePage != "service-area") && ($isCityPage == 0) && ($thePage != "free-estimate")) { ?>
+
+<div class="container" id="dealer-network-map">
+    <div class="row aos-item" data-aos="fade-up">
+      <div class="columns medium-10 medium-centered large-12 large-uncentered">
+        <div class="find-local">Find Your Local Contractor</div>
+      </div>
+    </div>
+    <div class="row aos-item" data-aos="fade-up">
+        <div class="medium-10 medium-centered large-5 large-uncentered columns local-contractor">
+	        <h4>All products and services are provided exclusively by local contractors within the Basement Systems Network.</h4>
+		        <p>To ensure professional installation and superior service we carefully created an international network of over 350 trusted basement contractors.</p>
+            <!--<div class="contactor-concern">
+            	<div class="concern-one">1</div>
+            	<div class="concern-two">
+            		Select the are of concern:
+            		<form name="aform" method="post">
+            <input type="radio" id="r1" name="rr" />
+                <label for="r1"><span></span>Basement</label>
+                <input type="radio" id="r2" name="rr" />
+                <label for="r2"><span></span>Crawl Space</label>
+            </form>
+            	</div>
+            </div>--->
+            <div class="contactor-zip">
+            	<div class="zip-two"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            	<div class="zip-entry">Enter your zip code
+                    <div class="mm-form-wrap zip-form">		
+                        <form method="get" action="http://www.basementsystems.com" target="_top">
+                            <input type="text" name="zip_search" placeholder="Zip code">
+                            <input type="submit" class="button postfix submit" value="GET STARTED">
+                        </form>
+            	    </div>
+                </div>
+            </div>
+        </div>
+        <div class="medium-10 medium-centered large-6 large-uncentered large-offset-1 columns hide-for-small dealer-map">
+            <div id="map-select">
+                <ul class="button-group">
+                     <li class="static">Or select a state or province to get started</li>
+                    <li class="active"><a class="button" id="USA">USA</a></li>
+                    <li><a class="button" id="CA">Canada</a></li>
+                </ul>
+            </div>
+            <div class="" id="map"></div>
+            <div class="ca-map-wrap">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14907/canada-map.svg" alt="Map of Canada" />
+            </div>
+	    </div>
+    </div>
+</div>
+
+              <?php
+              }
+              ?>
+
+            <?php if (($thePage == "index")) { ?>
+
+                    <div class="container" id="cred">
+                        <div class="row">
+                            <div class="columns" id="feature-head">
+                                <p><span>Featured On</span></p>
+                            </div>
+                        </div>
+                        <div class="row" id="feature-strip">
+                
+                            <div class="columns" id="feature-vila">
+                                <span><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/215/bobvila.jpg" alt="Bob Vila"></span>
+                            </div>
+                            <div class="columns" id="feature-hgtv">
+                                <span><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/215/hgtv.png" alt="HGTV"></span>
+                            </div>
+                            <div class="columns" id="feature-extreme">
+                                <span><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/215/extreme-makeover.png" alt="Extreme Makeover Home Edition"></span>
+                            </div>
+                            <div class="columns" id="feature-today">
+                                <span><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/215/today-show-gray-horiz.png" alt="Today Show"></span>
+                            </div>
+                            <div class="columns" id="feature-want">
+                                <span><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/215/want-that.jpg" alt="I Want That"></span>
+                            </div>
+                            <div class="columns" id="feature-hazelton">
+                                <span><img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/215/hazelton.jpg" alt="Ron Hazelton Home Improvement Online"></span>
+                            </div>
+                        </div>
+                    </div><!-- end credibility -->
+
+                    <?php
+                    }
+                    ?>
+
+            <div class="container home" id="footer">
+                <div class="row" data-equalizer>
+                    <div class="large-8 large-push-4 columns" data-equalizer-watch>
+                        <div id="footer-links">
+                	        <ul>
+                	            <li class="footer-link services"><span class="footer-titles">Services</span>
+                            		<ul>
+                            			<li><a href="/basement-waterproofing.html" title="Basement Waterproofing">Basement Waterproofing</a></li>
+                            			<li><a href="/crawl-space-repair.html" title="Crawl Space Repair">Crawl Space Repair</a></li>
+                            			<li><a href="/foundation-repair.html" title="Foundation Repair">Foundation Repair</a></li>
+                            			<li><a href="/basement-finishing.html" title="Basement Finishing">Basement Finishing</a></li>
+                            			<li><a href="/basement-dehumidifier.html" title="Dehumidification">Dehumidification</a></li>
+                            		</ul>
+                            	</li>
+                        	
+                        	    <li class="footer-link products"><span class="footer-titles">Products</span>
+                            		<ul>
+                            			<li><a href="/sump-pump.html" title="Sump Pumps">Sump Pumps</a></li>
+                            			<li><a href="/basement-dehumidifier/sanidry-sedona-dehumidifier.html" title="Dehumidifiers">Dehumidifiers</a</li>
+                            			<li><a href="/basement-waterproofing/basement-waterproofing-products/drainage-systems.html" title="Drainage Systems">Drainage Systems</a></li>
+                            			<li><a href="//basement-waterproofing/basement-waterproofing-products/basement-windows.html" title="Basement Windows">Basement Windows</a></li>
+                            			<li><a href="/basement-finishing/basement-wall.html" title="Basement Wall Systems">Basement Wall Systems</a></li>
+                            			<li><a href="/basement-finishing/basement-flooring.html" title="Basement Flooring">Basement Flooring</a></li>
+                            			<li><a href="/crawl-space/crawl-space-vapor-barrier.html" title="Crawl Space Vapor Barrier">Crawl Space Vapor Barrier</a></li>
+                            			<li><a href="/crawl-space/crawl-space-insulation.html" title="Crawl Space Insulation">Crawl Space Insulation</a></li>
+                            			<li><a href="/crawl-space/crawl-space-products/crawl-space-door.html" title="Crawl Space Door">Crawl Space Door</a></li>
+                            		</ul>
+                                </li>
+                    	    </ul>
+                        </div>
+                    </div>
+                    <div class="large-4 large-pull-8 columns" data-equalizer-watch>
+                        <div id="footer-contact">
+                            <div class="top-text">ABOUT THE BASEMENT SYSTEMS NETWORK</div>
+                            <p>Since 1987, Basement Systems, Inc. and it's network of affiliated contractors has helped restore peace of mind to thousands of homeowners across North America.</p>
+                            <div class="footer-btn">
+<p><i class="fa fa-map-marker" aria-hidden="true"></i><a href="/basement-waterproofing/contractor.html">Find a Contractor</a></p>
+<p><i class="fa fa-phone" aria-hidden="true"></i>1-800-888-8888</p>
+<p><i class="fa fa-mouse-pointer" aria-hidden="true"></i><a href="/free-estimate.html">Request a free estimate</a></p>
+</div>
+                            <p class="footer-address">
+                                <span>[company]</span> &copy; 2002-<?php echo(date('Y')); ?> All Rights Reserved.</p>
+                              <p>Connect with us</p>
+                              <ul class="social">
+                                <li><a href="https://www.facebook.com/basementsystemsinc" target="_blank" title="Facebook"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/social/facebook-icon.svg"); ?></a></li>
+                                <li><a href="http://www.youtube.com/user/basementsystems" target="_blank" title="YouTube"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/social/youtube-icon.svg"); ?></a></li>
+                                <li><a href="http://www.linkedin.com/company/basement-systems-inc-" target="_blank" title="LinkedIn"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/social/linkedin-icon.svg"); ?></a></li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<div class="container home" id="footer-bottom">
+                <div class="row" data-equalizer>
+                    <div class="large-12 columns" data-equalizer-watch>
+                        <p>* What is a Free Estimate and Inspection? A system design specialist from one of our dealerships will inspect and measure your basement or crawl space completely FREE of charge.You will also receive one of our books (valued at $14.95) at no cost to you including free shipping.</p>
+
+<p>** Warranties vary by product and service. Check with your local dealership for specific warranty information.</p>
+                        </div>
+                        </div>
+                        </div>
+            <a id="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i>Top</a>
+        </div>
+
+ [[custom_core_v3_js]]
+     <!-- MAP JS -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js'></script>
+    <script src='https://cdn.rawgit.com/markmarkoh/datamaps/master/dist/datamaps.usa.min.js'></script>
+    <script>
+    
+    $( ".ca-map-wrap" ).load( "canada-map.html#ca-map" );
+    
+      $(".ca-map-wrap").hide();
+    
+      $(".button#USA").click(function(){
+        $("#map").show();
+        $(".ca-map-wrap").hide();
+      });
+    
+      $(".button#CA").click(function(){
+        $(".ca-map-wrap").show();
+        $("#map").hide();
+      });
+    </script>
+    
+    <!-- MAP ADDITIONAL JS -->
+    <script>
+var bsmap = new Datamap({
+  scope: 'usa',
+  element: document.getElementById('map'),
+  height: 300,  
+    width: 570,
+  geographyConfig: { 
+      highlightFillColor: '#2e64ff',
+      highlightBorderColor: '#ffffff',
+      popupOnHover: false, //disable the popup while hovering
+      popupTemplate: function(geography, data) {
+      return '<div class="hoverinfo">' +  geography.properties.name  + ' '
+    },
+    highlightBorderWidth: 1
+  },
+  fills: {
+  'Active': '#2e64ff',
+  defaultFill: '#d9d9d9'
+}
+});
+bsmap.labels();
+
+d3.select('.UT').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/utah-ut.html';
+});
+
+d3.select('.AL').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/alabama-al.html';
+});
+
+d3.select('.AR').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/arkansas-ar.html';
+});
+
+d3.select('.AK').on("click", function(){
+window.location =     'http://www.basementsystems.com/alaska-ak.html';
+});
+
+d3.select('.AZ').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/arizona-az.html';
+});
+
+d3.select('.CT').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/connecticut-ct.html';
+});
+
+d3.select('.CA').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/california-ca.html';
+});
+
+d3.select('.CA').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/california-ca.html';
+});
+
+d3.select('.DE').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/delaware-de.html';
+});
+
+d3.select('.FL').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/florida-fl.html';
+});
+
+
+d3.select('.GA').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/georgia-ga.html';
+});
+
+d3.select('.HI').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/hawaii-hi.html';
+});
+
+d3.select('.GA').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/hawaii-hi.html';
+});
+
+d3.select('.ID').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/idaho-id.html';
+});
+
+d3.select('.ID').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/illinois-il.html';
+});
+
+
+d3.select('.IN').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/indiana-in.html';
+});
+
+d3.select('.IA').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/iowa-ia.html';
+});
+
+
+d3.select('.KS').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/kansas-ks.html';
+});
+
+
+d3.select('.KY').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/kentucky-ky.html';
+});
+
+d3.select('.LA').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/louisiana-la.html';
+});
+
+d3.select('.ME').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/maine-me.html';
+});
+
+d3.select('.MD').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/maryland-md.html';
+});
+
+
+d3.select('.MA').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/massachusetts-ma.html';
+});
+
+
+d3.select('.MA').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/massachusetts-ma.html';
+});
+
+
+d3.select('.MI').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/michigan-mi.html';
+});
+
+
+
+d3.select('.MN').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/minnesota-mn.html';
+});
+
+
+d3.select('.MS').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/mississippi-ms.html';
+});
+
+d3.select('.MO').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/missouri-mo.html';
+});
+
+
+d3.select('.MT').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/montana-mt.html';
+});
+
+
+d3.select('.NE').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/nebraska-ne.html';
+});
+
+
+d3.select('.NV').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/nevada-nv.html';
+});
+
+
+d3.select('.NH').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/new-hampshire-nh.html';
+});
+
+
+d3.select('.NJ').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/new-jersey-nj.html';
+});
+
+d3.select('.NM').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/new-mexico-nm.html';
+});
+
+d3.select('.NY').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/new-york-ny.html';
+});
+
+d3.select('.NC').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/north-carolina-nc.html';
+});
+
+d3.select('.ND').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/north-dakota-nd.html';
+});
+
+d3.select('.OH').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/ohio-oh.html';
+});
+
+d3.select('.OK').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/oklahoma-ok.html';
+});
+
+d3.select('.OR').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/oregon-or.html';
+});
+
+d3.select('.PA').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/pennsylvania-pa.html';
+});
+
+d3.select('.RI').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/rhode-island-ri.html';
+});
+
+d3.select('.SC').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/south-carolina-sc.html';
+});
+
+
+d3.select('.SD').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/south-dakota-sd.html';
+});
+
+
+d3.select('.TN').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/tennessee-tn.html';
+});
+
+d3.select('.TX').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/texas-tx.html';
+});
+
+d3.select('.VT').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/vermont-vt.html';
+});
+
+d3.select('.VA').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/virginia-va.html';
+});
+
+d3.select('.WA').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/washington-wa.html';
+});
+
+d3.select('.WV').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/west-virginia-wv.html';
+});
+
+d3.select('.WI').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/wisconsin-wi.html';
+});
+
+d3.select('.WY').on("click", function(){
+window.location =     'http://www.basementsystems.com/basement-waterproofing/wyoming-wy.html';
+});
+
+
+
+    </script>
+    
+<!-- CANADA MAP JS -->    
+<script>
+
+$(document).on("click", '#CA-AB', function(event) { 
+window.location =     'http://www.basementsystems.com/basement-waterproofing/alberta-ab.html';
+});
+
+$(document).on("click", '#CA-BC', function(event) { 
+window.location =     'http://www.basementsystems.com/basement-waterproofing/british-columbia-bc.html';
+});
+
+$(document).on("click", '#CA-MB', function(event) { 
+window.location =     'http://www.basementsystems.com/basement-waterproofing/manitoba-mb.html';
+});
+
+$(document).on("click", '#CA-NB', function(event) { 
+window.location =     'http://www.basementsystems.com/basement-waterproofing/new-brunswick-nb.html';
+});
+
+ 
+$(document).on("click", '#CA-NL', function(event) { 
+window.location =     'http://www.basementsystems.com/basement-waterproofing/newfoundland-and-labrador-nl.html';
+});
+
+$(document).on("click", '#CA-NS', function(event) { 
+window.location =     'http://www.basementsystems.com/basement-waterproofing/nova-scotia-ns.html';
+});
+
+$(document).on("click", '#CA-PE', function(event) { 
+window.location =     'http://www.basementsystems.com/basement-waterproofing/prince-edward-island-pe.html';
+});
+
+$(document).on("click", '#CA-QC', function(event) { 
+window.location =     'http://www.basementsystems.com/basement-waterproofing/quebec-qc.html';
+});
+
+$(document).on("click", '#CA-SK', function(event) { 
+window.location =     'http://www.basementsystems.com/basement-waterproofing/saskatchewan-sk.html';
+});
+
+$(document).on("click", '#CA-ON', function(event) { 
+window.location =     'http://www.basementsystems.com/basement-waterproofing/ontario-on.html';
+});
+ 
+
+
+    </script>
+    <script src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1336/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine',
+        disable: 'mobile'
+      });
+      $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 3500,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+    </script>
+ <?php if (($thePage == "index")) { ?>    
+    <script>
+        $('#main-message').slick({
+            autoplay: false,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'ease',
+            responsive: [
+                {
+                  breakpoint: 640,
+                  settings: "unslick"
+                }
+            ]
+        });
+            
+        $('#home-product-slider > .columns').slick({
+            autoplay: false,
+            arrows: true,
+            dots: true,
+            infinite: true,
+            speed: 1000,
+            cssEase: 'ease',
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            responsive: [
+                {
+                breakpoint: 1024,
+                    settings: {
+                        speed: 500,
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                breakpoint: 640,
+                    settings: {
+                        speed: 500,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+            });
+            </script> 
+
+<?php
+}
+?>
+<script>
+    //toggle map tabs
+    $('#map-select .button-group li:not(.static)').click(function() {
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    });
+</script>
+    </body>
+</html>
