@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Index</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" href="">
+        <link rel="alternate" title="News and Events" href="/feeds.xml" type="application/rss+xml" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="/core/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="/core/v2/jquery-ui-default.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+        <script src="/core/js/jquery.thScrollable.js" type="text/javascript" defer></script>
+        <!-- ColorBox -->
+        <script type="text/javascript" src="http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/colorbox/jquery.colorbox-min.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/colorbox/colorbox.css" />
+        <!--End ColorBox-->
+        <link rel="stylesheet" type="text/css" href="http://a1c23520d0263bdf29dc-4b02aec4485eb16af457fbebe9081b2b.r59.cf1.rackcdn.com/toolbox.css" />
+        <link rel="stylesheet" type="text/css" href="http://a1c23520d0263bdf29dc-4b02aec4485eb16af457fbebe9081b2b.r59.cf1.rackcdn.com/inline-widgets.css" />
+        <link rel="stylesheet" type="text/css" href="http://a1c23520d0263bdf29dc-4b02aec4485eb16af457fbebe9081b2b.r59.cf1.rackcdn.com/sidebar-widgets.css" />
+        <link rel="stylesheet" type="text/css" href="http://a1c23520d0263bdf29dc-4b02aec4485eb16af457fbebe9081b2b.r59.cf1.rackcdn.com/modules.css" />
+        <link rel="stylesheet" type="text/css" href="http://a1c23520d0263bdf29dc-4b02aec4485eb16af457fbebe9081b2b.r59.cf1.rackcdn.com/template.css" />
+        <link rel="stylesheet" href="/core/v3/foundation.min.css">
+        <script src="https://use.typekit.net/nka1kzw.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+        <!--Mobile Overrides -->
+        <link rel="stylesheet" media="screen and (max-width: 960px)" href="http://a1c23520d0263bdf29dc-4b02aec4485eb16af457fbebe9081b2b.r59.cf1.rackcdn.com/mobile.css" />
+        <link rel="stylesheet" type="text/css" href="/inc/sb-styles.css">
+</head>
+
+    <body>
+        <div id="template-wrap">
+            <div class="container" id="header">
+                <div class="row header-full" data-equalizer>
+                    <div class="small-6 large-4 columns" id="logo" data-equalizer-watch>
+                         <a href="/"><img src="http://placehold.it/200x100" alt="company"></a>
+                    </div>
+                    <div class="columns small-6 large-3 large-push-5" id="badge" data-equalizer-watch>
+                        <img src="http://a1c23520d0263bdf29dc-4b02aec4485eb16af457fbebe9081b2b.r59.cf1.rackcdn.com/images/oc-pc-logo.png">
+                    </div>
+                    <div class="large-5 large-pull-3 columns" id="contact" data-equalizer-watch>
+                        <div id="phone-button">
+                        <div class="row collapse phone-row">
+                            <div class="columns" id="phone">
+                                    <?php
+                                        $times = get_open_time();
+                                        if($times or isset($_GET['open']))
+                                        {
+                                        ?>
+
+                                        <div class="opensign"><span>open</span></div>
+
+                                    <?php
+                                    }
+                                    ?>
+                                    
+                                    <?php
+                                        $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+                                        $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+                                        if($iphone || $android  == true)
+                                        {
+                                        ?>
+                                        <a href="tel:<?php echo $phonenumber; ?>" class="phone_link">
+
+                                        <?
+                                        }
+                                        else
+                                        { ?>
+
+                                        <a href="/free-estimate.html" class="phone_link">
+                                    <?php
+                                    }
+                                    ?>
+                            
+                                    [phone]
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row collapse">
+                            <div class="columns" id="header-btn">
+                                <a class="button" href="/free-estimate.html">Contact Us</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div><!-- end #contact -->
+                    
+                    
+                </div>
+            </div><!-- end #header -->
+
+           <!-- SUPER NAV TOOL -->            
+            <?php
+                $superNav = new nav();
+                $superNav->superTemplateId = 6;
+                $superNav->superMode = 'top';
+                $superNav->superItems = array(
+                    
+                    //Replace with Page ID of Contact Us Page
+                    136616 => array(
+                        'grandchildren' => false
+                    ),
+                    'Services' => array(
+                        'target' => 'services'
+                    ), 
+                    148072 => array(
+                         'target' => 'about',
+                         'grandchildren' => true,
+                         'show_about_link' => true
+                    ),
+                    'Service Area' => array(
+                        'target' => 'map',
+                    ),
+                    //Replace with Page ID of Contact Us Page
+                    147801 => array(
+                        'grandchildren' => false
+                    )
+                );
+                
+                echo $superNav->generateSuperMarkup();
+                ?>
+        <!-- END SUPER NAV TOOL -->    
+
+
+                <?php if ($thePage == "index") { ?>
+
+                        <div class="container" id="main-message">
+                            <div class="row hero-txt">
+                              <div class="columns">
+                                <p class="main-head">Main Tagline or Slogan</p>
+                                <p class="sub-head">Optional subheadline or secondary message</p>
+                              </div>
+                            </div>
+                            <div class="container cta-txt">
+                                <div class="row large-collapse" data-equalizer>
+                                    <div class="columns large-8" data-equalizer-watch>
+                                        <p class="cta-head hide-for-small">Learn more about the Owens Corning Roofing System</p>
+                                        <p class="cta-sub-head">Contact us today to get started with a free estimate</p>
+                                    </div>
+                                    <div class="columns large-4" data-equalizer-watch>
+                                        <a class="cta-btn">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /#main-message -->
+                        <div class="container" id="homepage-content">
+
+            <?php
+            }
+            elseif ((stristr($thePage,"contact-us")) || ($isCityPage == true) || (stristr($thePage,"service-area")))
+            {
+            ?>
+                <div class="container" id="page-wrap">
+                  <div class="row">
+                      <div class="columns full-width" id="content-wrap">
+            <?php
+            }
+            elseif (stristr($thePage, "index2"))
+            {
+            ?>
+                        <div class="container" id="main-message">
+                            <div class="oc-badge">
+                                <img src="http://a1c23520d0263bdf29dc-4b02aec4485eb16af457fbebe9081b2b.r59.cf1.rackcdn.com/images/oc-pc-logo.png">
+                            </div>
+                            <div class="row hero-txt-2">
+                              <div class="columns main-txt-2">
+                                <p class="main-head">Main Tagline or Slogan</p>
+                                <p class="sub-head">Optional subheadline or secondary message</p>
+                              </div>
+                            </div>
+                            <div class="quote-btn">
+                                <a href="/free-estimate.html">Get a Quote</a>
+                            </div>
+                        </div><!-- /#main-message -->
+                        <div class="container" id="homepage-content">
+            <?php
+            }
+            elseif (stristr($thePage, "index3"))
+            {
+            ?>
+                <div class="container" id="main-message">
+                            <div class="row hero-txt-3">
+                              <div class="columns main-txt-3">
+                                <p class="main-head">Main Tagline or Slogan</p>
+                                <p class="sub-head">Optional subheadline or secondary message</p>
+                              </div>
+                            <div class="container cta-txt-3">
+                                <div class="row" data-equalizer>
+                                    <div class="columns" data-equalizer-watch>
+                                        <p class="cta-head">Learn more about the Owens Corning Roofing System</p>
+                                        <p class="cta-sub-head">Contact us today to get started with a free estimate</p>
+                                    </div>
+                                    <div class="columns" data-equalizer-watch>
+                                        <a class="cta-btn">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- /#main-message -->
+                        <div class="container" id="homepage-content">
+            <?php
+            }
+            else
+            {
+            ?>
+
+                  <div class="container" id="page-wrap">
+                      <div class="row">
+                          <div class="medium-9 medium-push-3 columns body" id="content-wrap">
+            <?php
+            }
+            ?>
+                            [[content]]
+                          </div>
+            <?php if (($thePage != "index") && ($thePage != "service-area") && ($isCityPage == 0) && ($thePage != "contact-us") && ($thePage != "contact-us/confirmation"))
+           { ?>
+                <div class="medium-3 medium-pull-9 columns" id="subnav-left">
+                    <ul class="side-nav">
+                      <li><a href="#">Link 1</a></li>
+                      <li><a href="#">Link 2</a></li>
+                      <li><a href="#">Link 3</a></li>
+                      <li><a href="#">Link 4</a></li>
+                    </ul>
+                    
+                    <div class="side-cta"><span>Schedule an Appointment Today!</span>
+                    <span class="side-p"><i class="fa fa-phone" aria-hidden="true"></i>[[phone]]</span></div>
+                </div>
+            <?php
+            }
+            ?>
+                  
+            <?php if ($thePage != "index") { ?>
+                        </div>
+                    </div>
+            <?php
+            }
+            ?>
+
+            <?php if (($thePage != "index") && ($thePage != "service-area") && ($isCityPage == 0) && ($thePage != "free-estimate") && ($thePage != "free-estimate/confirmation"))
+            { ?>
+                </div><!-- end #silo-page-wrap -->
+            <?php
+            }
+            ?>
+
+              <?php if (($thePage != "service-area") && ($isCityPage == 0) && ($thePage != "contact-us")) { ?>
+
+                <div class="container home" id="service-area">
+                    <div class="container home" id="home-city-list-wrap">
+                        <div class="row collapse">
+                            <div class="large-push-9 large-3 columns">
+                                <div id="home-city-list">
+                                    <p class="home-section-title">our service area</p>
+                                        [[city_scroll:100]]                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container home" id="service-map">
+                            <div id="gmap-wrap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4683.044079359103!2d-80.00188109956693!3d40.44035021771394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb694b4359810b4a7!2sMarket+Square+Place!5e0!3m2!1sen!2sus!4v1495043690036" frameborder="0" style="border:0;width:100%;height:450px;" allowfullscreen></iframe></div>
+                    </div>
+                </div><!-- end #service-area -->
+
+              <?php
+              }
+              ?>
+
+                        <div class="container home" id="footer">
+                <div class="row" data-equalizer>
+                    <div class="columns" data-equalizer-watch>
+                        <div id="footer-info">
+                            <div class="footer-links">
+                                <p><a href="/roof-replacement.html">Roof Replacement</a> | <a href="/roof-repair.html">Roof Repair</a> | <a href="/siding.html">Siding</a> | <a href="/about-us.html">About Us</a> | <a href="/service-area.html">Service Area</a> | <a href="/free-estimate.html">Free Estimate</a></p>
+                            </div>
+                            <p class="footer-address">
+                                © 2017 Company Name | 1111 N Address Rd<br>Town, CT 11111 | <a href="tel:<?php echo $phonenumber; ?>" class="phone_link">[phone]</a></p>
+                              <p>
+                                Contractor ID: [license number]
+                              </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i>Top</a>
+        </div>
+            <div id="powered-by">
+                <a href="http://contractornation.com" title="Contractor Nation" target="_blank">
+                    <span>website powered by</span>
+                    <img src="http://a1c23520d0263bdf29dc-4b02aec4485eb16af457fbebe9081b2b.r59.cf1.rackcdn.com/images/cn-logo-sm.png" alt="Website powered by Contractor Nation">
+                </a>
+            </div>
+            <a id="scrollToTop">Top</a>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script> 
+        <script src="http://a1c23520d0263bdf29dc-4b02aec4485eb16af457fbebe9081b2b.r59.cf1.rackcdn.com/template.js"></script> 
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+        <script src="https://use.fontawesome.com/f7e993f443.js"></script>
+ <?php if (($thePage == "index")) { ?>
+
+    <script>
+        $('#inline-affil-slider').slick({
+            autoplay: true,
+            arrows: true,
+            infinite: true,
+            speed: 1000,
+            cssEase: 'ease',
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                breakpoint: 640,
+                settings: {
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
+                }
+            ]
+            });
+     </script>
+
+<?php
+}
+?>
+
+    </body>
+</html>
