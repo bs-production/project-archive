@@ -1,0 +1,250 @@
+@charset "utf-8";
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	color:#03216d;
+	background: #e7e7e7;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+}
+
+h1{
+	font-family:Myriad Pro,Arial;
+	font-size:26pt;
+	margin-bottom:-5px;
+}
+h2 {
+	margin-top:5px;
+	font-size:14pt;
+}
+
+hr {
+	color:#03216d;
+}
+#container { 
+
+	width: 1020px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	/*background: #FFFFFF;*/
+	background:url(../images/background.jpg);
+	margin: auto auto 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	border-top:none;
+	border-bottom:1px solid #000000;
+	padding-top:33px;
+	z-index:1;
+	position:relative;
+} 
+#topred{
+	position:absolute;
+	z-index:2;
+	background-color:#d80911;
+	color:#FFFFFF;
+	font:Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	width:100%;
+	text-align:right;
+	font-weight:bold;
+	border-bottom:solid;
+	border-bottom-color:#FFFFFF;
+}
+#topred table{
+	/*margin-left:845px;*/
+	float:right;
+}
+#nav {
+	font-size: 12px;
+	font-weight: bold;
+	width:210px;
+	background-color:#03216d;
+	height:250px;
+}
+#nav img {
+	border-top:solid;
+	border-top-color:#FFFFFF;
+	border-top-width:1px;
+	border-bottom:solid;
+	border-bottom-color:#FFFFFF;
+	border-bottom-width:1px;
+	margin-bottom:-11px;
+
+}
+#nav ul {
+	margin-bottom: 0;
+	margin-top: 0px;
+	margin-left:0;
+	display:inline;
+}
+
+#nav ul li {
+	list-style: none;
+	border-bottom:solid;
+	border-bottom-color:#FFFFFF;
+	border-bottom-width:1px;
+
+
+}
+
+#nav ul li a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 8px 0px 7px 0px;
+	padding-left:40px;
+}
+
+#nav ul li a:hover {
+	background: #2D4EA2;
+}
+
+
+
+#header { 
+	/*background: #DDDDDD; */
+	padding: 0 0px 0 20px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+
+} 
+#header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+#header img {
+	margin-left:-20px;
+
+}
+
+#header-left{
+	float:left;
+	padding:0;
+	margin:0;
+
+}
+
+#header-right{
+	float:right;
+	padding:0;
+	margin:0 0 0 -20px;	
+}
+#sidebar1 {
+	/*float: left; /* since this element is floated, a width must be given */
+	width: 180px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #2d4ea2; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0px 15px 20px;
+	margin-left:30px;
+	margin-top:-3px;
+}
+#sidebar1 div{
+	margin-left:-20px;
+}
+
+#sidebar1 table{
+	margin-left:-15px;
+	margin-bottom:25px;
+}
+.buttons{
+	border:none;
+}
+#sidebar1 div div{
+	margin-left:0px;
+	width:210px;
+	border-bottom:solid thin;
+	border-bottom-color:#FFFFFF;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:12px;
+	text-align:left;
+	padding: 14px 40px 14px 0;
+
+}
+#sidebar1 div div a{
+		
+}
+
+#mainContent { 
+	margin: -450px 0px 0 250px; /* the left margin on this div element creates the column down the left side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
+	padding: 0px 15px 0; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+
+
+} 
+#mainContent h1 {
+	font-family:Myriad Pro;
+}
+#mainContent div div{
+	margin-top:-7px;
+}
+#footer { 
+	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DDDDDD; 
+} 
+#footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+.active{
+	background-color:#2d4EA2;
+
+}
+.dormant
+{
+	background-color:#03216D;
+
+}
+.frontpagetext{
+	font-size:9pt;
+}
+
+.redtext{
+	color: #d80911;
+	font-weight:bold;
+}
+.boldblue{
+	font-weight:bold;
+}
+
+#fixed-header {
+	position: fixed;
+	top: 0;
+	left:0;
+	overflow: auto;
+	height: 35px;
+	border-bottom: 1px solid #000;
+	width: 100%;
+	padding: 5px 0 0;
+	background-color:#d80911;
+	color:#FFFFFF;
+	font:Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	text-align:right;
+	font-weight:bold;
+	border-bottom:solid;
+	border-bottom-color:#FFFFFF;
+	z-index:2;
+}
+#fixed-header table{
+	float:right;
+}
+.img-left{
+	margin:7px;
+	float:left;
+}
+.img-right{
+	margin:7px;
+	float:right;
+}
